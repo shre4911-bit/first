@@ -259,13 +259,8 @@ footer{
     align-items: center;
   }
 
-  .flag {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-  }
 }
+
 
 
 
