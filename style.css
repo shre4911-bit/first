@@ -199,26 +199,51 @@ footer{
   flex-wrap: wrap;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .navbar {
     flex-direction: row;
     height: auto;
     padding: 10px 0;
-    flex-wrap: wrap;
+    display: flex;
+    /* justify-content: space-evenly; */
   }
+  
 
   .logo {
-    margin: 0 0 10px 0;
+    width: 80px;
+    height: 40px;
+    margin: 0 5px 0 0;
   }
 
   .searchholder {
-    width: 100%;
+    width: 40px;
     justify-content: center;
   }
 
+  .search{
+    width: 100%;
+  }
+
   .searchbox {
-    width: 300px; /* Decreased from calc(100% - 30px) to fit inline */
-    margin-left: 0;
+    width: 250px; /* Decreased from calc(100% - 30px) to fit inline */
+    margin-right: 40px;
+  }
+
+  /* Hide specific navbar items on phones */
+  .flag,
+  .en,
+  .location,
+  .orders {
+    display: none;
+  }
+
+  .sign-in{
+    margin-left: -10px;
+    margin-right: -40px;
+  }
+
+  .cart {
+    margin-left: 10px;
   }
 
   .com {
@@ -252,6 +277,7 @@ footer{
   .text select {
     display: inline-block;
     white-space: nowrap;
+    font-size: 16px;
   }
 
   footer {
@@ -259,9 +285,9 @@ footer{
     align-items: center;
   }
 
+
+  .deliver{
+    font-size: 16px;
+    
+  }
 }
-
-
-
-
-
