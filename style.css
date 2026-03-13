@@ -199,11 +199,74 @@ footer{
   flex-wrap: wrap;
 }
 
-@Media screen and (max-width: 600px){
-  footer{
+@media (max-width: 600px) {
+  .navbar {
     flex-direction: row;
-    display:block;
+    height: auto;
+    padding: 10px 0;
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    margin: 0 0 10px 0;
+  }
+
+  .searchholder {
     width: 100%;
+    justify-content: center;
+  }
+
+  .searchbox {
+    width: 300px; /* Decreased from calc(100% - 30px) to fit inline */
+    margin-left: 0;
+  }
+
+  .com {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  
+
+  .box,
+  .box1 {
+    width: calc(100% - 20px);
+    margin: 0 auto 20px;
+  }
+
+  .second {
+    flex-wrap: wrap;
+    height: 40px;
+  }
+
+  .text {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    width: calc(100% - 5px);
+  }
+
+  .text p,
+  .text select {
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flag {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
   }
 }
+
+
+
 
